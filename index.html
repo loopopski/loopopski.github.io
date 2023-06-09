@@ -1,231 +1,97 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>eblessin</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #222;}
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-    </style>
-  </head>
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="images/1pagebgd.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PINNOCHIO - WEB DEVELOPMENT</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<header>
+  <h1>PINNOCHIOS</h1>
+</header>
+<div class="banner">
+    <img src="images/banner.png" alt="space landing banner /">
+    <div>
+        <p class="announcement">Do you want to expand your services across different regions?.... We are here to <em>serve</em> you <strong>THAT SPACE</strong>!!!</p> 
+        <h2 class="welcome">Welcome <br><span>PinnochioS</span></h2>       
+    </div>
+</div>
+<nav class="main-nav">
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/entertainment.html">Entertainment</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
 </nav>
+<main>
+  <section class="myDocuments">
+    <div>
+      <img src="" alt="Face of THE AUTHOR">
+      <summary>Author's <em>diary</em>:</summary>
+      <details>
+        <p>I'm Ibukunoluwa Obideyi and popularly known as Ope by all but my mom is used to calling me "Opeoluwa" or "Operaah." Although she gave me that name and the details behind it is best known her. She told us (My siblings and I) a bit about it which most of them had relationship with before and during conception, and then after my birth. Working as a developer, I spent several hours sitting in front of my computer screen or laying on back with my phone in my hand reasearching and brainstorming on ideas for why development is an important use case for me and everyone, especially why website development is such a cool stuff for anyone looking to learn and grow.</p>
+        <p>Resume C. V. <a href="resources/Curriculum_Vitae.html">portfolio</a></p>
+      </details>
+    </div><br><br>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Ibukun Obideyi.</h1>
-    <p>I'm an adventurous blogger and Web developer.</p>
-    <img src="images/1pagebgd.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Blogging</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    <div class="adverts">
+      <img src="" alt="Adverts">
+      <p>Advertise here</p>
     </div>
-    <p class="w3-wide">Web Development</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+  </section>
+
+  <article class="content">
+    <h2>Risk takers... what is going on today ?</h2>
+    <h3>The Power of Risk-Taking: Embracing Uncertainty for Personal Growth</h3>
+
+    <h4>Introduction:</h4>
+    <p>Life is an incredible journey filled with opportunities, challenges, and uncertainties. At the heart of personal growth and success lies the willingness to take risks. Risk-taking is not about blindly jumping into unknown territory, but rather a calculated approach to exploring new possibilities and pushing the boundaries of our comfort zones. In this blog post, we will delve into the importance of risk-taking, how it fosters personal development, and strategies to embrace and manage risks effectively.
+
+    <ol>
+      <li>Overcoming Fear and Stepping Outside the Comfort Zone:
+      <p>Taking risks inherently involves a certain level of fear and uncertainty. However, it is within the realm of discomfort   that personal growth and transformation occur. By stepping outside our comfort zones, we expose ourselves to new  experiences, perspectives, and opportunities. Whether it's pursuing a new career, starting a business, or traveling to  unfamiliar places, overcoming fear is the first step toward growth.</p>
+      </li>
+      <li>Embracing Failure as a Stepping Stone to Success:
+      <p>One of the primary reasons people shy away from taking risks is the fear of failure. However, failure is not a  destination; it's a valuable lesson on the path to success. Risk-taking allows us to learn from our mistakes, adapt, and  develop resilience. The most successful individuals often have a trail of failures behind them, which have ultimately  shaped their character and propelled them forward. Embracing failure as a natural part of the process is crucial for personal growth.</p>
+      </li>
+      <li>Expanding Your Comfort Zone:
+      <p>A stagnant comfort zone limits our potential and prevents us from experiencing new horizons. By taking risks, we expand   our comfort zones and broaden our perspectives. The more we challenge ourselves, the more adaptable and open-minded we  become. Risk-taking cultivates creativity, innovation, and the ability to think outside the box. It enables us to discover hidden talents, explore new passions, and unlock our true potential.</p>
+      </li>
+      <li>Seizing Opportunities and Achieving Goals:
+      <p>Opportunities often present themselves when we are willing to take risks. By actively seeking and embracing these   opportunities, we increase our chances of achieving our goals. Risk-taking allows us to seize the moment, capitalize on   favorable circumstances, and create our own destiny. It empowers us to break free from mediocrity, set ambitious goals,   and pursue our dreams with determination.</p>
+      </li>
+      <li>Developing Resilience and Adaptability:
+      <p>Life is unpredictable, and risk-taking equips us with the skills needed to navigate uncertainties. By embracing risks, we   develop resilience and adaptability, enabling us to bounce back from setbacks and challenges. These qualities are   essential for personal growth and success in a rapidly changing world. Risk-takers are better equipped to face adversity,   find alternative solutions, and turn setbacks into opportunities for growth.</p>
+      </li>
+
+      <p>Conclusion:
+      Taking risks is not about being reckless or impulsive but rather about making informed decisions that push us beyond our comfort zones. It is through calculated risk-taking that we discover our true potential, overcome challenges, and achieve personal growth. By embracing uncertainty, stepping outside our comfort zones, and learning from failures, we can unlock new opportunities and embark on a transformative journey toward success. So, dare to take risks, embrace the unknown, and watch your life flourish in ways you never thought possible.</p>
+    </ol>
+    <figure>
+      <ul class="images">
+        <li>
+          <p>An act of taking risk:</p>
+          <img src="images/risk_taker-article.bmp.png" alt="open risk taker 1">
+        </li>
+        <li>
+          <p>Another act of taking risk:</p>
+          <img src="images/atm-disobedient.bmp.png" alt="open risk taker 2">
+        </li>
+      </ul>
+    </figure>
+  </article>
+  <aside class="side">
+    <div id="news-container">
+      <h5><b>News Section</b></h5>
     </div>
-    <p class="w3-wide">Text Editor</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    <p class="w3-wide">Terminal</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">200+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">30+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">50+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-    
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Web Development</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 20</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Web Development</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 50</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
-    </div>
-    
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="images/veronica.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Veronica Biola.</span> CEO at Mighty Builders.</p>
-    <p>Ibukun Obideyi saved us from a web disaster.</p><br>
-    
-    <img src="images/Susan.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Ifeoluwa Susan.</span> CEO at Selfcare Groups of Company.</p>
-    <p>No one is better than Ibukun Obideyi on what he does.</p>
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Gallery</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/sailboat.jpg" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Ibadan, NG</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +02 170828</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ibukunobideyi@gmail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
- <p class="w3-small">This website was made with W3schools Spaces. Make your own website today!</p>
- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
- <!-- End footer -->
+  </aside>
+</main>
+<footer>
+  <p>Site made to bring you services &copy; 2021 PINNOCHIO.</p>
 </footer>
-
-<!-- END PAGE CONTENT -->
-</div>
-
 </body>
 </html>
